@@ -10,16 +10,13 @@ int main() {
     cin >> t;
 
     for (int i = 0; i < t; i++) {
-        int32_t n = 0, k = 0, r = 0;
+        int32_t n = 0, k = 0;
 
         cin >> n >> k;
 
-        vector<int32_t> u;
+        vector<int32_t> u(n);
 
-        for (int32_t j = 0; j < n; j++) {
-            cin >> r;
-            u.push_back(r);
-        }
+        for (int32_t j = 0; j < n; j++) cin >> u[j];
 
         int64_t sum = 0;
 
