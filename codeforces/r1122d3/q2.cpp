@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    std::ios_base::sync_with_stdio(false);
+    std::cin.tie(NULL);
+
+    auto n = 0;
+
+    cin >> n;
+
+    for (int i = 0; i < n; i++) {
+        auto a = 0, b = 0, c = 0;
+
+        cin >> a >> b >> c;
+
+        auto result = (a < b && b-a < a+c-b) || (a >= b) ? a+c-b : a-b;
+
+        cout << abs(result) << "\n"; 
+    }
+
+    return 0;
+}
