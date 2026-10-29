@@ -6,9 +6,13 @@ using pr  = pair<ll, ll>;
 using vll = vector<ll>;
 using vi  = vector<int>;
 
-#define all(x) (x).begin(), (x).end()
+#define all(x)  (x).begin(), (x).end()
 #define rall(x) (x).rbegin(), (x).rend()
-#define srt(x) std::sort(all(x))
+#define srt(x)  std::sort(all(x))
+
+constexpr int INF32 = 1e9;
+constexpr ll  INF64 = 1e18;
+constexpr int MOD   = 1e9 + 7;
 
 template <typename T>
 void vin(vector<T>& v) {
